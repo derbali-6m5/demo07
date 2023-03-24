@@ -11,7 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let api = RestApi()
+        api.getPosts()
+        
+        //let post = Post()
+        
+        api.addPost(post: ["title": " ", "body": "", "userId": 1])
     }
 
 
